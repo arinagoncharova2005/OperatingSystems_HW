@@ -1,0 +1,7 @@
+    1  man cat
+    2  grep "a" ~/Desktop/tt1.txt
+    3  ls > ~/Desktop/filenames.txt
+    4  echo "Today is sunny"
+    5  less ~/week01/ex1.txt
+    6  cat ~/Desktop/filenames.txt ~/Desktop/notes.txt > merged.txt
+    7  ./ex2.sh

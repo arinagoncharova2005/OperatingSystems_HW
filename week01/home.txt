@@ -3,7 +3,6 @@ Templates
 Public
 Pictures
 Music
-Downloads
 Documents
 namelist.txt
 namelist.sorted.txt
@@ -18,4 +17,8 @@ filenames.sorted.txt
 filenames_new.txt
 Desktop
 new_file.txt
+snap
+OperatingSystems_HW
+Downloads
+nano.8122.save
 week01

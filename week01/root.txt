@@ -12,10 +12,10 @@ home
 snap
 var
 boot
+root
+etc
 sys
 proc
 dev
-root
 run
-etc
 tmp
