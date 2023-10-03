@@ -1,0 +1,8 @@
+For n = 3 the number of created processes was 8.
+For n = 5 the number of created processes was 32.
+We can notice that the number of created processes is equal to 2^n,
+where n is the number of times the fork() was called, because every process is duplicated when the fork is called.
+
+For example, the result of calling fork() the first time: -ex3_hw.o---ex3_hw.o
+The result of calling fork() the second time: ex3_hw.o-+-ex3_hw.o---ex3_hw.o
+                                                      `-ex3_hw.o

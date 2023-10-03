@@ -1,0 +1,7 @@
+58969
+47016
+56890
+38276
+42286
+68631
+Dot product of vectors u and v is 312068
