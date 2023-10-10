@@ -1,0 +1,6 @@
+
+The 1st time is 3948236803 nanoseconds
+The 2nd time is 2524849057 nanoseconds
+The 3rd time is 1424306118 nanoseconds
+The 4th time is 1209745923 nanoseconds
+The 5th time is 1088340946 nanoseconds

@@ -1,0 +1,3 @@
+Named pipe allows communication between processes that can have no relations (parent/child) while unnamed pipes are used only in processes that have relations.
+
+In our case, processes from the publisher program does not have parent/child relations to the subscribers' processes, so we should use named pipes.

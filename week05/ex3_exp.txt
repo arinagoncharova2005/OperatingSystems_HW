@@ -1,0 +1,3 @@
+As the number of used threads m increases, the program execution time decreases,
+because the number of numbers to be processed by each thread decreases,
+and also the threads work in parallel that means that the program finds the answer faster.

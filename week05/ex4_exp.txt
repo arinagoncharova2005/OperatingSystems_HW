@@ -1,0 +1,4 @@
+The execution time decreases as the number of threads increases. This is because threads are executing in parallel and the amount of numbers that each thread should process decreases. Therefore, the time needed to check all numbers also decreases.
+
+If we compare the execution time of the ex4.c program with the execution time of ex3.c,
+the execution time of ex4.c in most cases is slightly greater. I think that this is because we are avoiding race condition in ex4 using mutex and it takes time.
