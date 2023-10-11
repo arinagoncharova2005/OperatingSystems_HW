@@ -6,6 +6,8 @@
 #include <string.h>
 
 #define MAX_LEN 1024
+#define LEN 100
+#define PIPES_NUM 4
 
 int main(int argc, char *argv[]) {
     if (argc < 2) {
@@ -19,7 +21,7 @@ int main(int argc, char *argv[]) {
     int fd;
 
     //array of pipes
-    int fd_pc[4][2];
+    int fd_pc[PIPES_NUM][2];
     mkdir("/tmp/ex1", 0777);
     //creating named fifo
     char fifo[] = "/tmp/ex1/s";
@@ -29,7 +31,7 @@ int main(int argc, char *argv[]) {
         pipe(fd_pc[i - 1]);
         pid_t pid = fork();
 
-        char i_str[100];
+        char i_str[LEN];
         sprintf(i_str, "/tmp/ex1/s%d", i);
         mkfifo(i_str, 0666);
         if (pid == 0) {
