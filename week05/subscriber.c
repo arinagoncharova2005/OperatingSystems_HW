@@ -4,6 +4,7 @@
 #include <unistd.h>
 
 #define MAX_LEN 1024
+#define LEN 100
 
 int main(int argc, char *argv[]) {
 
@@ -13,7 +14,7 @@ int main(int argc, char *argv[]) {
     }
 
     int id = atoi(argv[1]);
-    char fifo[100];
+    char fifo[LEN];
     char message[MAX_LEN];
     sprintf(fifo, "/tmp/ex1/s%d", id);
     int fd = open(fifo, O_RDONLY);
