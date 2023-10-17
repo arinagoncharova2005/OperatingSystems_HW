@@ -1,0 +1,5 @@
+Running Shortest Job First algorithm for the data given in the task gives
+this output for the average results: avg_wt=9.285714, avg_tat=13.571428. In comparison
+with fcfs algorithm it is faster in wt and tat (fcfs results: avg_wt=8.000000, avg_tat=12.285714).
+This is because sometimes it is more effective to execute the program with less burst time
+which came later than the one that has greater burst time but came earlier.

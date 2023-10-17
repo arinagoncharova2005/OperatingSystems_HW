@@ -1,0 +1,6 @@
+1. After the change of the macro, simulation results did not change because they depend only
+on the arrival time and burst time of the processes. Two only things that changed are that
+the program calculated the answer faster in case of TRI_BASE = 100 and
+the number of found triangular numbers was increased.
+2. In case when all processes have 0 at, the processes are executed in the order given in the file.
+For the given data.txt it will be: 0, 1, 2, 3, 4, 5, 6, 7.
