@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
+#include <limits.h>
 
 #define MAX_SIZE 10000000
 #define INP_MAX 1000
@@ -25,7 +26,7 @@ void allocate_first_fit(unsigned int adrs, int size) {
             is_find = 1;
         }
     }
-    
+
     for (int j = i; j > i - size; j--) {
         arr[j - 1] = adrs;
     }
@@ -36,7 +37,7 @@ void allocate_best_fit(unsigned int adrs, int size) {
     int start_idx= 0;
     int cur_start_idx = 0;
     int free_num = 0;
-    int free_num_min = MAX_SIZE;
+    int free_num_min = INT_MAX;
 
     //find first free cell
     while (i<MAX_SIZE && arr[i] != 0) {
