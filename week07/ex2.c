@@ -27,6 +27,7 @@ int main() {
         }
         if (num_of_c == 1024) {
             fprintf(text, "%s", "\n");
+            num_of_c = 0;
         }
     }
     long int size = ftell(text);
