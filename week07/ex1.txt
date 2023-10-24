@@ -1,0 +1,16 @@
+For the provided input file in the lab presentation (queries.txt contains 54 queries), the total allocation time results are the following:
+
+1) First fit time: 0.460390 s, throughput: 117.291861
+2) Best fit time: 1.164475 s, throughput:  46.372829
+3) Worst fit time:  1.166351 s, throughput: 46.298241
+
+The first fit is the fastest algorithm in comparison with the best and the worst fit but
+it does not use memory efficiently.
+
+For example, if we need to allocate 5 memory cells but there are 10 free contiguous cells
+in memory first, and then 6. The first fit will allocate 5 cells in these 10.
+Nevertheless, it will be more rational to fill 5 cells from the next 6 ones to use first 10 cells for requests to allocate larger number of cells.
+
+Best fit and worst fit are almost identical in speed, but the idea of memory management is opposite in these algorithms. They are slower because they go through the whole array to find the most effective place.
+
+Therefore, first fit algorithm is faster, but memory inefficient, the best fit and the worst fit are slower, but help to allocate memory more efficiently.
