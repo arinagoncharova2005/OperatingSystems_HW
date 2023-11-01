@@ -5,18 +5,19 @@
 #include <string.h>
 
 #define NUM 10
+#define MEM_SIZE 10*1024*1024
 
 int main() {
     struct rusage usage;
 
-    void*addresses[NUM];
+    char*addresses[NUM];
     int i = 1;
     while (i<=NUM) {
         printf("%d\n", i);
-        void* memory = malloc(500*1024*1024);
-        memset(memory, 0, 500 * 1024 * 1024);
+        char* memory = malloc(MEM_SIZE);
+        memset(memory, 0, MEM_SIZE);
         getrusage(RUSAGE_SELF, &usage);
-        printf("Memory: %ld bytes\n", usage.ru_maxrss);
+        printf("Memory: %ld KB\n", usage.ru_maxrss);
         sleep(1);
         addresses[i - 1] = memory;
         i++;
