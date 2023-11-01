@@ -1,0 +1,8 @@
+Firstly, I allocated 10 MB every second. In the statistics, given by the command «vmstat 1», fields si and so were equal to 0 because there were enough free space in RAM and there were no swap in and  swap out processes. 
+
+Then, I tried to allocate more memory: 500 MB every second. This time, I noticed a change in the parameters si and so. 
+
+During the first 3 allocations, fields si and so were 0. On the 4th allocation, so field started to grow (became 2088), then on the next allocations si started to grow slowly (28, 140, ...) and so field also started to grow (18784, 171556, ...). 
+
+This is because RAM ran out of free space and the process of swapping out started. OS has written some memory to disk to free some space in RAM and allocate the memory needed by the running program. Moreover, the increase in si showed that OS started to load to RAM some memory that is needed.
+
