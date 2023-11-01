@@ -148,12 +148,12 @@ int main(int argc, char *argv[]) {
     
     if (num_of_frames > F) {
         printf("Incorrect number of frames\n");
-        return EXIT_SUCCESS;
+        return EXIT_FAILURE;
     }
 
     if (num_of_pages > P) {
         printf("Incorrect number of pages\n");
-        return EXIT_SUCCESS;
+        return EXIT_FAILURE;
     }
 
     //creating and initializing the page table
