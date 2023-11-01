@@ -37,7 +37,7 @@ int main() {
     }
     fclose(random_file);
 
-    char* map = mmap(NULL, PASS_LEN_FULL*sizeof(char), PROT_READ|PROT_WRITE, MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
+    char* map = mmap(NULL, PASS_LEN_FULL*sizeof(char), PROT_READ|PROT_WRITE, MAP_SHARED | MAP_ANONYMOUS, -1, 0);
     if (map == MAP_FAILED){
         printf("Error with map\n");
     }
