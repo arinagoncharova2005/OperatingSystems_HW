@@ -1,0 +1,16 @@
+I ran program with random, nfu and aging page replacement algorithms for the test providede in GitHub (number of pages 1000 and number of frames 100). Here are the results of execution:
+
+1) Random (One of the obtained results): Number of hits: 105
+           The hit ratio is 0.105000
+           
+
+
+2) NFU: Number of hits: 99
+        The hit ratio is 0.099000
+
+        
+3) Aging:  Number of hits: 103
+           The hit ratio is 0.103000
+
+
+After comparing the values obtained, I concluded that aging and nfu are more effective algorithm in general case because it they takesinto account the time the pages have been unused. A random algorithm can be effective, but not always, it depends on the reference string. Therefore, nfu and aging are approximately the same and are effective for a large number of queries.

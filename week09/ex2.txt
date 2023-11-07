@@ -1,0 +1,18 @@
+I ran program with random, nfu and aging page replacement algorithms for the test providede in GitHub (number of pages 1000 and number of frames 100). Here are the results of execution:
+
+1) Random (One of the obtained results): Number of hits: 105
+           The hit ratio is 0.105000
+           TLB miss ratio: 0.804000
+           
+
+
+2) NFU: Number of hits: 99
+        The hit ratio is 0.099000
+        TLB miss ratio: 0.804000
+
+        
+3) Aging:  Number of hits: 103
+           The hit ratio is 0.103000
+           TLB miss ratio: 0.804000
+
+According to the results, the random algorithm is not effective because ot needs more disk accesees in general case while nfu and aging are almost the same.
