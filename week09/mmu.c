@@ -105,6 +105,8 @@ void process_operation(char operation, int page_num, pid_t pid) {
     for (int i = 0; i<0.2*num_of_pages; i++) {
         if (TLB_array[i].page == page_num) {
             is_page_in_TLB = true;
+            // update frame if it was changed
+            TLB_array[i].frame = mapped_page_table[page_num].frame;
             break;
         }
     }
