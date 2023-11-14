@@ -1,0 +1,20 @@
+My monitor.c reported an event that myfile11.txt was modified
+because this file was added to the watched directory
+and monitor.c see everything that happens to it.
+
+But the modification of the content of the /tmp/myfile1.txt 
+was not reported by the monitor.c. This happens because 
+myfile1.txt was moved to another folder and is located 
+not in the watched directory. Moreover, myfile13.txt 
+did not changed because it is a soft link and reference was not 
+modified.
+
+Before removing duplicates, there were 3 hard links for each of 
+myfile1.txt, myfile11.txt and myfile12.txt 
+(because for each of them this file and 2 others counts as hard links).
+After removing duplicates, the number of hard links became 2
+because we moved myfile1.txt from the watched directory.
+So in the watched directory there were two files left 
+myfile11.txt and myfile12.txt. And function unlink_all()
+left one of them as required in the task. The number of
+hardlinks became 2 (myfile1.txt and myfile11.txt).
