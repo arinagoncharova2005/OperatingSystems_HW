@@ -1,0 +1,8 @@
+Explanation:
+The difference is in the files that were added to ex1.txt. 
+In the first case we changed the root directory with the chroot command, 
+so the program ex1.c considers lofsdisk as root directory and lists only files located in this folder.
+They are file2, file1, bin, lib, ex1, lost+found.
+In the second case we did not change the root directory, so the ex1.c program outputs all files that are 
+placed inside a normal (usual) root directory.
+
