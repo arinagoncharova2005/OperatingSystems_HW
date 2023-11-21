@@ -26,7 +26,6 @@ function get_libs() {
      # getting path as the first argument
      path=$1
      
-     a=$(ldd $path | awk '{print $3}')
      # ldd lists shared libraries for file whose path function got
      # then cut the result by ">" and take the second field and then take the first field from obtained line
      ldd $path | cut -d '>' -f 2 | awk '{print $1}'
