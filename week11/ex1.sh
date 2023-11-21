@@ -71,6 +71,6 @@ echo "------------------" >> ex1.txt
 echo "With usual root" >> ex1.txt
 # print separator to ex1.txt for better visibility
 echo "------------------" >> ex1.txt
-#execut ex1 with usual root and add the result of ex1 to ex1.txt
+#execute ex1 with usual root and add the result of ex1 to ex1.txt
 ./ex1 >> ex1.txt
 

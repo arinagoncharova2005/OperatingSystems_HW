@@ -9,12 +9,12 @@ void list_root_content() {
     if ((dir=opendir(path)) == NULL) {
         perror("Open dir error\n");
     } else {
+        // go through all the files placed in the root directory
+        // and display their names
         while ((entry = readdir(dir))!= NULL) {
             if (entry->d_name[0]!='.') {
                 printf("%s\n", entry->d_name);
-
             }
-
         }
         closedir(dir);
     }
